@@ -1,111 +1,356 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-body { margin:0; padding:0; font-family: Arial, Helvetica, sans-serif; }
-img { display:block; border:0; outline:none; text-decoration:none; }
-.container { max-width:600px; margin:0 auto; }
-.text { font-size:16px; line-height:1.5; text-align:justify; }
-.center { text-align:center; }
-.title { font-size:35px; color:#E67E23; font-weight:bold; }
-.subtitle { font-size:18px; font-weight:bold; }
-.section-title { font-size:20px; font-weight:bold; }
-.alert { color:#E03E2D; font-weight:bold; text-align:center; }
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<title></title>
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--<![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+
+      #outlook a { padding:0; }
+
+      body { margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; }
+
+      table, td { border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt; }
+
+      img { border:0;height:auto;line-height:100%; outline:none;text-decoration:none;-ms-interpolation-mode:bicubic; }
+
+      p { display:block;margin:13px 0; }
+</style>
+<!--[if mso]>
+<noscript>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+</noscript>
+<![endif]-->
+<!--[if lte mso 11]>
+<style type="text/css">
+
+      .mj-outlook-group-fix { width:100% !important; }
+</style>
+<![endif]-->
+<!--[if !mso]><!-->
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+          @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+
+@import url(https://fonts.googleapis.com/css?family=Cabin:400,700);
+</style>
+<!--<![endif]-->
+
+
+<style type="text/css">
+
+      @media only screen and (min-width:480px) {
+
+        .mj-column-per-100 { width:100% !important; max-width: 100%; }
+
+.mj-column-per-50 { width:50% !important; max-width: 50%; }
+
+      }
+</style>
+<style media="screen and (min-width:480px)">
+
+      .moz-text-html .mj-column-per-100 { width:100% !important; max-width: 100%; }
+
+.moz-text-html .mj-column-per-50 { width:50% !important; max-width: 50%; }
 </style>
 
+<style type="text/css">
+
+
+    @media only screen and (max-width:479px) {
+
+      table.mj-full-width-mobile { width: 100% !important; }
+
+      td.mj-full-width-mobile { width: auto !important; }
+
+    }
+</style>
+<style type="text/css">
+
+    .hide_on_mobile { display: none !important;} 
+
+        @media only screen and (min-width: 480px) { .hide_on_mobile { display: block !important;} }
+
+        .hide_section_on_mobile { display: none !important;} 
+
+        @media only screen and (min-width: 480px) { 
+
+            .hide_section_on_mobile { 
+
+                display: table !important;
+
+            }
+
+            div.hide_section_on_mobile { 
+
+                display: block !important;
+
+            }
+
+        }
+
+        .hide_on_desktop { display: block !important;} 
+
+        @media only screen and (min-width: 480px) { .hide_on_desktop { display: none !important;} }
+
+        .hide_section_on_desktop { 
+
+            display: table !important;
+
+            width: 100%;
+
+        } 
+
+        @media only screen and (min-width: 480px) { .hide_section_on_desktop { display: none !important;} }
+
+          p, h1, h2, h3 {
+
+              margin: 0px;
+
+          }
+
+          ul, li, ol {
+
+            font-size: 11px;
+
+            font-family: Ubuntu, Helvetica, Arial;
+
+          }
+
+          a {
+
+              text-decoration: none;
+
+              color: inherit;
+
+          }
+
+        @media only screen and (max-width:480px) {
+
+            .mj-column-per-100 { width:100%!important; max-width:100%!important; }.mj-column-per-100 > .mj-column-per-100 { width:100%!important; max-width:100%!important; }.mj-column-per-50 { width:100%!important; max-width:100%!important; }.mj-column-per-100 > .mj-column-per-50 { width:50%!important; max-width:50%!important; }
+
+        }
+
+        .mj-column-per-100 [class^="mj-column-per-"] {
+
+            line-height: normal;
+
+        }
+
+        .mj-button-full a {
+
+            display: block !important;
+
+        }
+
+        .rounded>table>tbody>tr>td>table {
+
+            border-collapse: separate !important;
+
+        }
+
+        h1{font-family:"Cabin", sans-serif;font-size:22px;font-weight:bold;}a{color:#0000EE;}h2{font-family:Helvetica, Arial, sans-serif;font-size:17px;font-weight:bold;}h3{font-family:Helvetica, Arial, sans-serif;font-size:13px;font-weight:bold;}p{font-family:Helvetica, Arial, sans-serif;font-size:11px;}ul{font-size:11px;font-family:Helvetica, Arial, sans-serif;}li{font-size:11px;font-family:Helvetica, Arial, sans-serif;}ol{font-size:11px;font-family:Helvetica, Arial, sans-serif;}
+</style>
 </head>
+<body style="word-spacing:normal;background-color:#FFFFFF;">
 
-<body>
+<div style="background-color:#FFFFFF;">
 
-<div class="container">
+<!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
 
-<!-- HEADER -->
-<img src="https://github.com/VitorCoutox/Vale/blob/main/CABE%C3%87ALHO%20VEICULOS%20LEVES.png?raw=true" width="100%">
-
-<!-- TITULO -->
-<p class="center title">COMUNICADO</p>
-
-<p class="center subtitle">
-Alteração no Processo de Cartão de Abastecimento<br>
-Veículos Leves Tubarão e EFVM
-</p>
-
-<!-- TEXTO -->
-<p class="text">
-Informamos a substituição do fornecedor de cartões de abastecimento da <strong>Ticketlog</strong> pela <strong>Veloe</strong>.
-</p>
-
-<!-- SEÇÃO 1 -->
-<p class="section-title">1. Recadastro de Condutores</p>
-
-<p class="text">
-Todos os condutores deverão realizar o recadastro:<br><br>
-👉 <a href="https://vale-forms.valeglobal.net/public?id=gy%2Bt82eyzNyXGcWyFW3xpg%3D%3D&lang=pt-BR">Recadastro de Condutor</a><br>
-📅 Prazo: <strong>22/06/2026</strong>
-</p>
-
-<p class="alert">
-⚠️ Necessário aprovação VP-4 ou superior
-</p>
-
-<!-- SEÇÃO 2 -->
-<p class="section-title">2. Substituição dos Cartões</p>
-
-<ul class="text">
-<li>100% dos cartões Ticketlog devem ser substituídos</li>
-<li>Prazo: <strong>22/06/2026</strong></li>
-</ul>
-
-<p class="alert">
-⚠️ Distribuição inicia em 15/06/2026
-</p>
-
-<!-- IMAGENS (AGORA 100% CORRETAS) -->
-<table width="100%" cellpadding="0" cellspacing="0">
+<div style="margin:0px auto;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+<tbody>
 <tr>
-<td width="50%">
-<img src="https://raw.githubusercontent.com/beatryzrc/fagner-1/main/img1.png" width="100%">
-</td>
-<td width="50%">
-<img src="https://raw.githubusercontent.com/beatryzrc/fagner-1/main/img2.png" width="100%">
+<td style="direction:ltr;font-size:0px;padding:9px 0px 9px 0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+<div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+<tbody>
+<tr>
+<td align="center" style="font-size:0px;padding:0px;word-break:break-word;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+<tbody>
+<tr>
+<td style="width:600px;">
+<img src="https://github.com/VitorCoutox/Vale/blob/main/CABE%C3%87ALHO%20VEICULOS%20LEVES.png?raw=true" style="border:0;border-radius:0px;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="600" height="auto">
 </td>
 </tr>
+</tbody>
 </table>
-
-<!-- SEÇÃO 3 -->
-<p class="section-title">3. Procedimentos</p>
-
-<p class="text">
-<strong>Site Tubarão:</strong><br>
-Consultar disponibilidade e retirar na Central de Transporte.
-</p>
-
-<p class="text">
-<strong>Sites EFVM:</strong><br>
-Acionar via WhatsApp: <strong>(27) 3333-2100</strong>
-</p>
-
-<!-- SEÇÃO 4 -->
-<p class="section-title">4. Orientações Gerais</p>
-
-<ul class="text">
-<li>Não haverá abastecimento digital inicialmente</li>
-<li>O não cumprimento pode gerar indisponibilidade</li>
-<li>Antecipar ações é fundamental</li>
+</td>
+</tr>
+<tr>
+<td align="left" style="font-size:0px;padding:15px;word-break:break-word;">
+<div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.5;text-align:left;color:#000000;"><p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: center;"><span style="font-size: 35px;"><strong><span style="color: rgb(230, 126, 35);">COMUNICADO</span></strong></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: center;"> </p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: center;"><span style="font-size: 18px; color: rgb(0, 0, 0);"><strong>Alteração no Processo de Cartão de Abastecimento </strong></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: center;"><span style="font-size: 18px; color: rgb(0, 0, 0);"><strong>Veículos Leves Tubarão e EFVM</strong></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px;"> </p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px;"> </p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: justify;"><span style="font-size: 16px;">Informamos a substituição do fornecedor de cartões de abastecimento da <strong>Ticketlog</strong> pela <strong>Veloe</strong>. Para garantir a continuidade das operações e evitar impactos, solicitamos a observância das orientações a seguir.</span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: left;"> </p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: left;"><span style="color: rgb(0, 0, 0); font-size: 20px;"><strong>1. Recadastro de Condutores</strong></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: left;"> </p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: justify;"><span style="font-size: 16px;">Todos os condutores que atualmente realizam abastecimento da frota deverão realizar o recadastro por meio do link abaixo:</span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: justify;"> </p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: justify;"><span style="font-size: 16px;">👉 <strong>Link</strong>: <span style="color: rgb(224, 62, 45);"><a href="https://vale-forms.valeglobal.net/public?id=gy%2Bt82eyzNyXGcWyFW3xpg%3D%3D&lang=pt-BR" target="_blank" rel="noopener" style="color: #0000EE;">Recadastro de Condutor - Serviços de Abastecimento</a></span></span>
+<span style="font-size: 16px;">📅 <strong>Prazo final: 22/06/2026</strong></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: justify;"> </p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: center;"><span style="color: rgb(224, 62, 45);"><strong><span style="font-size: 16px;">⚠️Necessário aprovação do VP-4 ou hierarquia superior</span></strong></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: justify;"> </p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: left;"><span style="font-size: 20px; color: rgb(0, 0, 0);"><strong>2. Substituição dos Cartões</strong></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: left;"> </p>
+<ul style="font-size: 11px; font-family: Helvetica, Arial, sans-serif; text-align: left;">
+<li style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; text-align: justify;">É requerido que <strong>100% dos cartões Ticketlog sejam substituídos</strong> pelos novos cartões <strong>Veloe</strong>.</li>
+<li style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; text-align: justify;"><span style="font-size: 16px; color: rgb(0, 0, 0);">📅 Prazo limite para substituição<strong>: 22/06/2026</strong></span></li>
 </ul>
-
-<!-- RODAPÉ TEXTO -->
-<p class="text">Atenciosamente,</p>
-<p class="text"><strong>Coordenação de Transporte</strong></p>
-
-<!-- RODAPÉ IMAGEM -->
-<img src="https://github.com/RafaelMoronari/imagens/blob/main/rodape%20servicos%20operacionais.png?raw=true" width="100%">
-
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: center;"><strong><span style="font-size: 16px; color: rgb(224, 62, 45);">⚠️ Importante: A distribuição dos novos cartões Veloe para a EFVM terá início em 15/06/2026.</span></strong></p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px;"> </p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: left;"><span style="color: rgb(0, 0, 0); font-size: 20px;"><strong>3. Procedimentos para Substituição dos Cartões</strong></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: left;"> </p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px;"><span style="font-size: 19px;"><strong>Site Tubarão</strong></span></p>
+<ul style="font-size: 11px; font-family: Helvetica, Arial, sans-serif;">
+<li style="font-size: 11px; font-family: Helvetica, Arial, sans-serif;"><span style="font-size: 16px;">Confirmar disponibilidade do cartão por placa. Atualização diária no link:<strong> </strong><a href="https://globalvale.sharepoint.com/:x:/r/sites/MobilidadeEFVM/_layouts/15/Doc.aspx?sourcedoc=%7B3B35D0DF-1C4D-4BCD-8384-F271AF849024%7D&file=Cart%25u00e3o%20abastecimento.xlsx&action=default&mobileredirect=true" target="_blank" rel="noopener" style="color: #0000EE;">Consutar disponibilidade do cartão</a></span></li>
+<li style="font-size: 11px; font-family: Helvetica, Arial, sans-serif;"><span style="font-size: 16px;">Após confirmação, realizar a retirada na <strong>Central de Transporte:</strong>
+📍 <strong>Edifício Belesa – Bloco 2 (inferior | Fundos). </strong>
+</span></li>
+</ul>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px;"> </p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px;"><span style="font-size: 19px;"><strong>Sites EFVM (R1, R2 ou R3)</strong></span></p>
+<ul style="font-size: 11px; font-family: Helvetica, Arial, sans-serif;">
+<li style="font-family: Helvetica, Arial, sans-serif; font-size: 16px;"><span style="font-size: 16px;">Confirmar disponibilidade do cartão por placa. Atualização diária no link: <a href="https://globalvale.sharepoint.com/:x:/r/sites/MobilidadeEFVM/_layouts/15/Doc.aspx?sourcedoc=%7B3B35D0DF-1C4D-4BCD-8384-F271AF849024%7D&file=Cart%25u00e3o%20abastecimento.xlsx&action=default&mobileredirect=true" target="_blank" rel="noopener" style="color: #0000EE;">Consultar disponibilidade do cartão</a></span>
+<span style="font-size: 16px;">Após confirmação,  acionar a Central de Transporte por whatsapp, <strong>Indicar na mensagem "placa EFVM - regional I, II ou III"</strong>,  combinar a melhor opção para <strong>envio ou retirada do cartão.</strong></span></li>
+</ul>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: center;"><strong><span style="font-size: 17px; color: rgb(224, 62, 45);">⚠️📱 whatsapp | Telefone Central de Transporte: (27) 3333-2100.  </span></strong></p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px;"> </p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: left;"><span style="font-size: 20px; color: rgb(0, 0, 0);"><strong>4. Orientações Gerais</strong></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: left;"> </p>
+<ul style="font-size: 11px; font-family: Helvetica, Arial, sans-serif;">
+<li style="font-family: Helvetica, Arial, sans-serif; color: rgb(0, 0, 0); font-size: 16px; text-align: justify;"><span style="font-size: 16px; color: rgb(0, 0, 0);">Neste primeiro momento <strong>não estará disponível o abastecimento digital</strong>, logo  o novo cartão é indispensável.</span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; text-align: justify;"><span style="font-size: 16px;">O não cumprimento dos prazos poderá gerar <strong>indisponibilidade de abastecimento </strong>e impactos operacionais.</span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; text-align: justify;"><span style="font-size: 16px;"> Reforçamos a importância de <strong>antecipar as ações para garantir a transição.</strong></span></li>
+</ul></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 
+<!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+
+<div style="margin:0px auto;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:10px 0px 10px 0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
+<div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+<tbody>
+<tr>
+<td align="center" style="font-size:0px;padding:0px;word-break:break-word;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+<tbody>
+<tr>
+<td style="width:300px;">
+<img src="https://raw.githubusercontent.com/beatryzrc/fagner-1/main/img1.png" style="border:0;border-radius:0px;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
+<div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+<tbody>
+<tr>
+<td align="center" style="font-size:0px;padding:0px;word-break:break-word;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+<tbody>
+<tr>
+<td style="width:300px;">
+<img src="https://raw.githubusercontent.com/beatryzrc/fagner-1/main/img2.png" style="border:0;border-radius:0px;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" height="auto">
+``</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+
+<div style="margin:0px auto;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:10px 0px 10px 0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+<div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+<tbody>
+<tr>
+<td align="left" style="font-size:0px;padding:15px;word-break:break-word;">
+<div style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.5;text-align:left;color:#000000;"><p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: justify;"><span style="font-size: 18px;">Atenciosamente,</span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; text-align: justify;">
+<span style="font-size: 18px;"><strong>Coordenação de Transporte Tubarão e EFVM</strong></span></p></div>
+</td>
+</tr>
+<tr>
+<td align="center" style="font-size:0px;padding:0px;word-break:break-word;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+<tbody>
+<tr>
+<td style="width:600px;">
+<img src="https://github.com/RafaelMoronari/imagens/blob/main/rodape%20servicos%20operacionais.png?raw=true" style="border:0;border-radius:0px;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="600" height="auto">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!--[if mso | IE]></td></tr></table><![endif]-->
+
+</div>
 </body>
 </html>
-``
+ 
